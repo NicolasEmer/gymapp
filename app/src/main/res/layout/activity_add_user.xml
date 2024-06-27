@@ -4,85 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".AddUserActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toolbar"
-        app:title="Add User"
         android:background="?attr/colorPrimary"
-        app:titleTextColor="?attr/colorSurface"
-        app:titleCentered="true"/>
+        app:title="Cadastrar"
+        app:titleCentered="true"
+        app:titleTextColor="?attr/colorSurface" />
 
     <LinearLayout
+        android:id="@+id/nameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20sp"
         android:layout_below="@id/toolbar"
-        android:id="@+id/nameLayout"
+        android:layout_margin="20sp"
         android:orientation="horizontal">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstNameLayout"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
             android:layout_width="0sp"
             android:layout_height="wrap_content"
-            android:id="@+id/firstNameLayout"
-            android:layout_weight="1"
             android:layout_marginEnd="5sp"
-            android:hint="Nome"
-            style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+            android:layout_weight="1"
+            android:hint="Nome">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstNameET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/firstNameET"
-                android:inputType="textCapSentences"/>
+                android:background="@color/white"
+                android:inputType="textCapSentences" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/nameLayout"
         android:layout_marginStart="20sp"
         android:layout_marginEnd="20sp"
-        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
-        android:hint="Numero de telefone"
-        android:id="@+id/phoneLayout"
-        android:layout_below="@id/nameLayout">
+        android:hint="Numero de telefone">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/phoneET"
-            android:inputType="phone"/>
+            android:background="@color/white"
+            android:inputType="phone" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20sp"
-        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
-        android:id="@+id/bioLayout"
         android:layout_below="@id/phoneLayout"
-        android:hint="Bio">
-
+        android:layout_margin="20sp"
+        android:hint="E-mail">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textCapSentences|textMultiLine"
-            android:id="@+id/bioET"/>
+            android:background="@color/white"
+            android:inputType="textCapSentences|textMultiLine" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/senhaLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLayout"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:hint="Senha">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senhaET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textCapSentences|textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/repsenhaLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senhaLayout"
+        android:layout_margin="20sp"
+        android:hint="Repetir Senha">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/repsenhaET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:inputType="textCapSentences|textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bioLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repsenhaLayout"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:hint="Bio">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bioET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textCapSentences|textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/addUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/bioLayout"
-        android:text="Adicionar"
-        android:id="@+id/addUser"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="Cadastrar" />
+
 
 </RelativeLayout>
