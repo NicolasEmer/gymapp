@@ -139,7 +139,9 @@
         android:layout_below="@id/bioLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
-        android:text="Cadastrar" />
+        android:text="Cadastrar"
+        android:backgroundTint="@color/bot"
+        android:textColor="@color/black"/>
 
 
 </RelativeLayout>
