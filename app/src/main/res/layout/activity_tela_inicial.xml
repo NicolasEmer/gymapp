@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaInicial">
+    tools:context=".TelaInicial"
+    android:background="@color/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -17,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -28,8 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/logo"
-        />
+        tools:srcCompat="@drawable/logo"/>
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -170,7 +170,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton5"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -179,7 +180,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton6"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton6"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        android:textColor="@color/white"/>
 
 
     <TextView
@@ -190,7 +192,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton7"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -199,7 +202,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton8"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -208,7 +212,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton9"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton9"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -217,7 +222,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton11"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton11"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11"
+        android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -226,7 +232,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton12"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton12"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton12" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -235,7 +242,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton13"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton13"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton13" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton13"
+        android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -244,7 +252,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton14"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton14"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton14" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton14"
+        android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -253,6 +262,38 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton15"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageButton15"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton15" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton15"
+        android:textColor="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/user"
+        android:layout_width="65dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/toolbar"
+        android:backgroundTint="@color/toolbar"
+        android:foregroundTint="@color/toolbar"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692"
+        tools:srcCompat="@drawable/icnperfi" />
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="65dp"
+        android:layout_height="82dp"
+        android:background="@color/toolbar"
+        android:backgroundTint="@color/toolbar"
+        android:foregroundTint="@color/toolbar"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692"
+        app:srcCompat="@drawable/playcopia" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
