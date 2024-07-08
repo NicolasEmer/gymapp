@@ -133,22 +133,27 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/bioLayout"
         android:layout_alignStart="@id/bioLayout"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
         android:text="Deletar"
-        app:backgroundTint="@android:color/holo_red_light"
-        android:layout_marginStart="20sp"
-        android:id="@+id/delete"/>
+        android:textColor="@color/black"
+        app:backgroundTint="@android:color/holo_red_light" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Salvar"
-        android:layout_alignEnd="@id/bioLayout"
         android:layout_below="@id/bioLayout"
-        android:id="@+id/save"
-        android:layout_marginEnd="20sp"/>
+        android:layout_alignEnd="@id/bioLayout"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="@color/bot"
+        android:text="Salvar"
+        android:textColor="@color/black" />
 
 </RelativeLayout>
