@@ -27,6 +27,16 @@ public class TelaInicial extends AppCompatActivity {
             return insets;
         });
 
+        ImageButton playBtn=findViewById(R.id.play);
+        playBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TelaInicial.this, GaleriaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         // Configurar OnClickListener para o botão user
         ImageButton userButton = findViewById(R.id.user);
         userButton.setOnClickListener(new View.OnClickListener() {

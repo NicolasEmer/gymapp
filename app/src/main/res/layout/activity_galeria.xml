@@ -11,9 +11,9 @@
         android:id="@+id/botaoCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
+        android:layout_margin="25dp"
         android:clickable="true"
         android:src="@drawable/baseline_videocam_24" />
 
