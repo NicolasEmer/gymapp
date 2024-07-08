@@ -1,6 +1,6 @@
 [versions]
 agp = "8.3.0"
-firebaseBom = "32.8.1"
+firebaseBom = "+"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
@@ -9,13 +9,15 @@ material = "1.11.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 playServicesTasks = "18.1.0"
-firebaseCommon = "20.4.3"
-firebaseFirestore = "24.11.1"
+firebaseCommon = "+"
+firebaseFirestore = "+"
 googleServices = "4.4.1"
 lifecycleLivedataKtx = "2.6.1"
 lifecycleViewmodelKtx = "2.6.1"
 navigationFragment = "2.6.0"
 navigationUi = "2.6.0"
+firebaseDatabase = "+"
+firebaseStorage = "+"
 
 [libraries]
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
@@ -34,6 +36,8 @@ lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-lived
 lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

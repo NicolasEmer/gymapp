@@ -5,4 +5,5 @@
     <color name="background">#696969</color>
     <color name="toolbar">#00BFFF</color>
     <color name="bot">#4682B4</color>
+    <color name="colorPrimary">#9C27B0</color>
 </resources>
