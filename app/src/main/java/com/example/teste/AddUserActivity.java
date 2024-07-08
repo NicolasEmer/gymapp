@@ -1,17 +1,18 @@
 package com.example.teste;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.firebase.firestore.DocumentReference;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -49,18 +50,47 @@ public class AddUserActivity extends AppCompatActivity {
         addUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Check if any field is empty
+                if (isEmpty(firstNameET) || isEmpty(phoneET) || isEmpty(emailET) || isEmpty(senhaET) || isEmpty(repsenhaET) || isEmpty(bioET)) {
+                    Toast.makeText(AddUserActivity.this, "Por favor preencha todas as informações!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 // Check if passwords match
-                if (!Objects.requireNonNull(senhaET.getText()).toString().equals(Objects.requireNonNull(repsenhaET.getText()).toString())) {
-                    Toast.makeText(AddUserActivity.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
+                String senha = Objects.requireNonNull(senhaET.getText()).toString();
+                String repSenha = Objects.requireNonNull(repsenhaET.getText()).toString();
+                if (!senha.equals(repSenha)) {
+                    Toast.makeText(AddUserActivity.this, "Senha não está igual", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // Check if email format is valid
+                String email = Objects.requireNonNull(emailET.getText()).toString();
+                if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    Toast.makeText(AddUserActivity.this, "Formato de email incorreto", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // Check if phone number is valid
+                String phone = Objects.requireNonNull(phoneET.getText()).toString();
+                if (!phone.matches("\\(\\d{2}\\)\\d{9}")) {
+                    Toast.makeText(AddUserActivity.this, "Formato de telefone incorreto! Formato esperado (DD)987654321", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+
+                // Check if password is strong (example: at least 6 characters with letters and numbers)
+                if (!isStrongPassword(senha)) {
+                    Toast.makeText(AddUserActivity.this, "A senha deve possuir mais de 6 caracteres e possuir letras e números!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 // Create a map to hold user data
                 Map<String, Object> user = new HashMap<>();
                 user.put("firstName", Objects.requireNonNull(firstNameET.getText()).toString());
-                user.put("phone", Objects.requireNonNull(phoneET.getText()).toString());
-                user.put("email", Objects.requireNonNull(emailET.getText()).toString());
-                user.put("senha", Objects.requireNonNull(senhaET.getText()).toString());
+                user.put("phone", phone);
+                user.put("email", email);
+                user.put("senha", senha);
                 user.put("bio", Objects.requireNonNull(bioET.getText()).toString());
 
                 // Add user data to Firestore
@@ -80,5 +110,16 @@ public class AddUserActivity extends AppCompatActivity {
                         });
             }
         });
+    }
+
+    // Function to check if EditText is empty
+    private boolean isEmpty(TextInputEditText editText) {
+        return editText.getText().toString().trim().isEmpty();
+    }
+
+    // Function to check if password is strong
+    private boolean isStrongPassword(String password) {
+        // At least 6 characters with letters and numbers
+        return password.length() >= 6 && password.matches(".*[a-zA-Z].*") && password.matches(".*\\d.*");
     }
 }
