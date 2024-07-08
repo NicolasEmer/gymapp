@@ -2,10 +2,12 @@ package com.example.teste;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class exibirAparelho extends AppCompatActivity {
@@ -31,11 +33,14 @@ public class exibirAparelho extends AppCompatActivity {
         textViewMusculosTrabalhados = findViewById(R.id.textView7);
         textViewComoUsar = findViewById(R.id.textView10);
 
+        // Get the number of the equipment from the previous activity
+        int numeroAparelho = getIntent().getIntExtra("numeroAparelho", 0); // 0 is the default value if no value is found
+
         // Get instance of Firestore
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        // Retrieve data from Firestore
-        db.collection("aparelhos").document("1")
+        // Retrieve data from Firestore based on the number of the equipment
+        db.collection("aparelhos").document(String.valueOf(numeroAparelho))
                 .get()
                 .addOnSuccessListener(documentSnapshot -> {
                     if (documentSnapshot.exists()) {

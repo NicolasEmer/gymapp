@@ -25,20 +25,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/rosca"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/abdominal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:srcCompat="@drawable/barraw" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/abdominal"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
@@ -46,25 +46,25 @@
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/rosca"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:srcCompat="@drawable/bancoabdominal" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/extensora"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+        app:layout_constraintEnd_toStartOf="@+id/flexora"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/rosca"
         app:srcCompat="@drawable/cadeiraextensora" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/flexora"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
@@ -72,25 +72,25 @@
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/extensora"
+        app:layout_constraintTop_toBottomOf="@+id/abdominal"
         app:srcCompat="@drawable/cadeiraflexora" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/crossover"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
+        app:layout_constraintEnd_toStartOf="@+id/leg"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/extensora"
         app:srcCompat="@drawable/crossover" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/leg"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
@@ -98,25 +98,25 @@
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="@+id/crossover"
+        app:layout_constraintTop_toBottomOf="@+id/flexora"
         app:srcCompat="@drawable/legpress" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/voador"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton13"
+        app:layout_constraintEnd_toStartOf="@+id/pulley"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        app:layout_constraintTop_toBottomOf="@+id/crossover"
         app:srcCompat="@drawable/peckfly" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
+        android:id="@+id/pulley"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
@@ -124,25 +124,25 @@
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton12"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11"
+        app:layout_constraintStart_toEndOf="@+id/voador"
+        app:layout_constraintTop_toBottomOf="@+id/leg"
         app:srcCompat="@drawable/pulleycostas" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
+        android:id="@+id/remada"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton15"
+        app:layout_constraintEnd_toStartOf="@+id/supino"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/voador"
         app:srcCompat="@drawable/remadabaixa" />
 
     <ImageButton
-        android:id="@+id/imageButton15"
+        android:id="@+id/supino"
         android:layout_width="165dp"
         android:layout_height="170dp"
         android:layout_marginStart="24dp"
@@ -150,8 +150,8 @@
         android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton14"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton13"
+        app:layout_constraintStart_toEndOf="@+id/remada"
+        app:layout_constraintTop_toBottomOf="@+id/pulley"
         app:srcCompat="@drawable/supinoreto" />
 
     <TextView
@@ -160,20 +160,20 @@
         android:layout_height="23dp"
         android:layout_marginTop="4dp"
         android:text="Rosca Direta na Barra W "
-        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="@+id/rosca"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="@+id/rosca"
+        app:layout_constraintTop_toBottomOf="@+id/rosca"
         android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Banco Abdominal"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="@+id/abdominal"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton6"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="@+id/abdominal"
+        app:layout_constraintTop_toBottomOf="@+id/abdominal"
         android:textColor="@color/white"/>
 
 
@@ -182,80 +182,80 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadeira Extensora"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="@+id/extensora"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintStart_toStartOf="@+id/extensora"
+        app:layout_constraintTop_toBottomOf="@+id/extensora"
         android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadeira Flexora"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
+        app:layout_constraintEnd_toEndOf="@+id/flexora"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:layout_constraintStart_toStartOf="@+id/flexora"
+        app:layout_constraintTop_toBottomOf="@+id/flexora"
         android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crossover"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton9"
+        app:layout_constraintEnd_toEndOf="@+id/crossover"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton9"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        app:layout_constraintStart_toStartOf="@+id/crossover"
+        app:layout_constraintTop_toBottomOf="@+id/crossover"
         android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Leg Press"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton11"
+        app:layout_constraintEnd_toEndOf="@+id/leg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton11"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11"
+        app:layout_constraintStart_toStartOf="@+id/leg"
+        app:layout_constraintTop_toBottomOf="@+id/leg"
         android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pecky Fly (Voador)"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton12"
+        app:layout_constraintEnd_toEndOf="@+id/voador"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton12"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        app:layout_constraintStart_toStartOf="@+id/voador"
+        app:layout_constraintTop_toBottomOf="@+id/voador"
         android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Puxador Pulley Costas"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton13"
+        app:layout_constraintEnd_toEndOf="@+id/pulley"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton13"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton13"
+        app:layout_constraintStart_toStartOf="@+id/pulley"
+        app:layout_constraintTop_toBottomOf="@+id/pulley"
         android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Remada Baixa (Máquina)"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton14"
+        app:layout_constraintEnd_toEndOf="@+id/remada"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton14"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton14"
+        app:layout_constraintStart_toStartOf="@+id/remada"
+        app:layout_constraintTop_toBottomOf="@+id/remada"
         android:textColor="@color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Supino Reto (Máquina)"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton15"
+        app:layout_constraintEnd_toEndOf="@+id/supino"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton15"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton15"
+        app:layout_constraintStart_toStartOf="@+id/supino"
+        app:layout_constraintTop_toBottomOf="@+id/supino"
         android:textColor="@color/white"/>
 
     <ImageButton
