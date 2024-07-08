@@ -94,7 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:inputType="textCapSentences|textMultiLine" />
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -105,12 +105,12 @@
         android:layout_below="@id/senhaLayout"
         android:layout_margin="20sp"
         android:hint="Repetir Senha">
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/repsenhaET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:inputType="textCapSentences|textMultiLine" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/repsenhaET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -131,7 +131,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/addUser"
         android:layout_width="wrap_content"
@@ -142,6 +141,4 @@
         android:text="Cadastrar"
         android:backgroundTint="@color/bot"
         android:textColor="@color/black"/>
-
-
 </RelativeLayout>
