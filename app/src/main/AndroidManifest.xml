@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -24,12 +26,14 @@
         android:theme="@style/Theme.TESTE"
         tools:targetApi="31">
         <activity
+            android:name=".LocalActivity"
+            android:exported="false" />
+        <activity
             android:name=".EditVideoActivity"
             android:exported="false" />
         <activity
             android:name=".GaleriaActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".AddVideoActivity"
             android:exported="false" />
@@ -62,6 +66,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBUHs4AC2cnYO5LMYPDbfwiXyR-SusMltM" />
     </application>
 
 </manifest>

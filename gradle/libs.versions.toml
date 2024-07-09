@@ -18,6 +18,7 @@ navigationFragment = "2.6.0"
 navigationUi = "2.6.0"
 firebaseDatabase = "+"
 firebaseStorage = "+"
+playServicesMaps = "19.0.0"
 
 [libraries]
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
@@ -38,6 +39,7 @@ navigation-fragment = { group = "androidx.navigation", name = "navigation-fragme
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

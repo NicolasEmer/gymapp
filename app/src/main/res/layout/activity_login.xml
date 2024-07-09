@@ -5,22 +5,22 @@
     android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    android:background="@color/background">
+    android:background="@color/background"
+    tools:context=".Login">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
+        android:contentDescription="@string/logo_desc"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253"
+        app:layout_constraintVertical_bias="0.106"
         app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/logo_desc"
         tools:visibility="visible" />
 
     <EditText
@@ -93,7 +93,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="30dp"
         android:autoSizePresetSizes="25"
         android:text="E-mail:"
         android:textColor="@color/white"
@@ -101,5 +101,17 @@
         app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/locationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/background_button"
+        android:text="Localização"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

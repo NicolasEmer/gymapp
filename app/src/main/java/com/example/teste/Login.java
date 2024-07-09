@@ -55,6 +55,18 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        AppCompatButton localizacaoBtn = findViewById(R.id.locationBtn);
+
+        // Set an OnClickListener on the "Cadastrar" button
+        localizacaoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Start AddUserActivity
+                Intent intent = new Intent(Login.this, LocalActivity.class);
+                startActivity(intent);
+            }
+        });
+
         // Set an OnClickListener on the "Login" button
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
