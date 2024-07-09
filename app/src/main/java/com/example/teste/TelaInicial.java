@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -27,7 +28,7 @@ public class TelaInicial extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton playBtn=findViewById(R.id.play);
+        ImageButton playBtn = findViewById(R.id.play);
         playBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,14 +37,22 @@ public class TelaInicial extends AppCompatActivity {
             }
         });
 
+        ImageButton logobt = findViewById(R.id.logobt);
+        logobt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TelaInicial.this, TelaInicial.class);
+                startActivity(intent);
+            }
+        });
 
         // Configurar OnClickListener para o botão user
         ImageButton userButton = findViewById(R.id.user);
         userButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Abrir a EditUserActivity ao clicar no botão user
-                Intent intent = new Intent(TelaInicial.this, EditUserActivity.class);
+                // Abrir a MainActivity ao clicar no botão user
+                Intent intent = new Intent(TelaInicial.this, MainActivity.class);
                 startActivity(intent);
             }
         });

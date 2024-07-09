@@ -15,7 +15,8 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="25dp"
         android:clickable="true"
-        android:src="@drawable/baseline_videocam_24" />
+        android:src="@drawable/baseline_videocam_24"
+        android:backgroundTint="@color/bot"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lista_videos"

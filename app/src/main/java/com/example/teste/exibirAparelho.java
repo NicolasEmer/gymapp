@@ -1,6 +1,9 @@
 package com.example.teste;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +29,35 @@ public class exibirAparelho extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        ImageButton playBtn = findViewById(R.id.play);
+        playBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(exibirAparelho.this, GaleriaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton logobt = findViewById(R.id.logobt);
+        logobt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(exibirAparelho.this, TelaInicial.class);
+                startActivity(intent);
+            }
+        });
+
+        // Configurar OnClickListener para o botão user
+        ImageButton userButton = findViewById(R.id.user);
+        userButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir a MainActivity ao clicar no botão user
+                Intent intent = new Intent(exibirAparelho.this, MainActivity.class);
+                startActivity(intent);
+            }
         });
 
         // Initialize TextViews

@@ -31,7 +31,6 @@ public class    MainActivity extends AppCompatActivity {
 
         FirebaseApp.initializeApp(MainActivity.this);
 
-        startActivity(new Intent(MainActivity.this, exibirAparelho.class));
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         RecyclerView recyclerView = findViewById(R.id.recycler);
 

@@ -54,7 +54,9 @@
         android:clickable="true"
         android:src="@drawable/baseline_delete_24"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/bot"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/botaoUpdate"
@@ -65,5 +67,6 @@
         android:clickable="true"
         android:src="@drawable/baseline_edit_24"
         android:layout_above="@id/botaoDelete"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/bot"/>
 </RelativeLayout>
